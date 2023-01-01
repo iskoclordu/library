@@ -9,6 +9,96 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  
+  <div class="logo-container">
+    <div class="logo">
+      <img src="icons/logo.png" alt="library logo">
+    </div>
+    <div class="brand-name">
+      <span>Libra.ry</span>
+    </div>
+  </div>
+
+  <div class="header">
+    <div class="search">
+      <input type="search" class="search-bar">
+      <button class="search">
+        <img src="icons/search.png" alt="magnifier symbol">
+      </button>
+    </div>
+    <div class="user-container">
+      <button class="log-in">Log in</button>
+      <p class="sign-up">If you still don't have an account please <a href="#">Sign Up!</a></p>
+    </div>
+  </div>
+
+  <div class="form.container">
+     <form action="" method="get" class="add-book">
+        <div class="form-row">
+            <label for="title">Title</label><br>
+            <input type="text" id="title" name="title">
+        </div>
+
+        <div class="form-row">
+            <label for="author">Author</label><br>
+            <input type="text" id="author" name="author">
+        </div>
+
+        <div class="form-row">
+          <label for="genre">Type of Book</label><br>
+          <select name="genre" id="genre">
+              <option value="adventure-stories">Adventure stories</option>
+              <option value="classics">Classics</option>
+              <option value="crime">Crime</option>
+              <option value="tales">Fairy tales, fables, and folk tales</option>
+              <option value="fantasy">Fantasy</option>
+              <option value="historicalFiction">Historical fiction</option>
+              <option value="horror">Horror</option>
+              <option value="humour-and-satire">Humour and satire</option>
+              <option value="literary-fiction">Literary fiction</option>
+              <option value="mystery">Mystery</option>
+              <option value="poetry">Poetry</option>
+              <option value="romance">Romance</option>
+              <option value="science-fiction">Science fiction</option>
+              <option value="short-stories">Short stories</option>
+              <option value="thrillers">Thrillers</option>
+              <option value="war">War</option>
+              <option value="youngAdult">Young Adult</option>
+              <option value="autobiography-and-memoir">Autobiography adn memoir</option>
+              <option value="biography">Biography</option>
+              <option value="essays">Essays</option>
+              <option value="non-ficton-novel">Non-fiction novel</option>
+              <option value="self-help">Self-help</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="page"># of Pages</label><br>
+          <input type="text" id="page" name="page">
+        </div>
+
+        <fieldset class="legacy-form-row">
+            <legend>Status</legend>
+            <input type="radio" id="finished" name="status" value="finished" checked>
+            <label for="finished" class="radio-label">Finished</label>
+            <input type="radio" id="unfinished" name="status" value="unfinished">
+            <label for="unfinished" class="radio-label">Unfinished</label>
+        </fieldset>
+
+        <div class="form-row">
+            <button>Submit</button>
+        </div>
+    </form>
+  </div>
+
+  <div class="content-container">
+    <div class="books"></div>
+    <div class="stats">
+      <h3>Stats</h3>
+      <p><span id="noOfBooks"></span> books in library</p>
+      <p><span id="noOfFinished"></span> books finished</p>
+      <p><span id="noOfPages"></span> pages finished</p>
+      <p><span id="favGenre"></span> is the most read genre in the library</p>
+    </div>
+  </div>
 </body>
 </html>
