@@ -78,9 +78,9 @@
 
         <fieldset class="legacy-form-row">
             <legend>Status</legend>
-            <input type="radio" id="finished" name="status" value="finished" checked>
+            <input type="radio" id="finished" name="status" value="Finished" checked>
             <label for="finished" class="radio-label">Finished</label>
-            <input type="radio" id="unfinished" name="status" value="unfinished">
+            <input type="radio" id="unfinished" name="status" value="Unfinished">
             <label for="unfinished" class="radio-label">Unfinished</label>
         </fieldset>
 
@@ -92,32 +92,24 @@
 
   <div class="content-container">
     <div class="books">
-      <div class="book-container" id="book1">
-        <div class="book-cover">
-          <p class="book-title">Lord of The Rings</p>
-          <p class="by">by</p>
-          <p class="author">J R R Tolkien</p>
-        </div>
-        <div class="book-info">
-          <p class="label">Type:</p>
-          <p class="type">Fantasy</p>
-          <p class="label">No of Pages:</p>
-          <p class="pages">1250</p>
-        </div>
-        <div class="buttons-book">
-          <button class="delete-card">Delete</button>
-          <button class="change-status">Mark As Read</button>
-        </div>
-      </div>
+
     </div>
 
     <div class="stats">
       <h3>Stats</h3>
-      <p><span id="noOfBooks"></span> books in library</p>
-      <p><span id="noOfFinished"></span> books finished</p>
-      <p><span id="noOfPages"></span> pages finished</p>
-      <p><span id="favGenre"></span> is the most read genre in the library</p>
+      <p><span id="noOfBooks">0</span> books in library</p>
+      <p><span id="noOfFinished">0</span> books finished</p>
+      <p><span id="noOfPages">0</span> pages finished</p>
+      <p><span id="favGenre">...</span> is the most read genre in the library</p>
     </div>
+
+    <div class="sort-options">
+      <h3>Sort Books</h3>
+      <button class="sort-by-title">Sort By Title</button>
+      <button class="sort-by-author">Sort By Author</button>
+      <button class="sort-by-Type">Sort By Type</button>
+      <button class="sort-by-Status">Sort By Status</button>
+      </div>
     
   </div>
 </body>
