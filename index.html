@@ -20,9 +20,9 @@
 
   <div class="header">
     <div class="search">
-      <input type="search" class="search-bar">
-      <button class="search">
-        <img src="icons/search.png" alt="magnifier symbol">
+      <input type="search" class="search-bar" placeholder="Search for Books in Library">
+      <button class="search-button">
+        <img src="icons/search.svg" alt="magnifier symbol">
       </button>
     </div>
     <div class="user-container">
@@ -31,7 +31,7 @@
     </div>
   </div>
 
-  <div class="form.container">
+  <div class="form-container">
      <form action="" method="get" class="add-book">
         <div class="form-row">
             <label for="title">Title</label><br>
@@ -73,7 +73,7 @@
 
         <div class="form-row">
           <label for="page"># of Pages</label><br>
-          <input type="text" id="page" name="page">
+          <input type="number" id="page" name="page">
         </div>
 
         <fieldset class="legacy-form-row">
@@ -84,14 +84,33 @@
             <label for="unfinished" class="radio-label">Unfinished</label>
         </fieldset>
 
-        <div class="form-row">
+        <div class="form-button">
             <button>Add New Book</button>
         </div>
     </form>
   </div>
 
   <div class="content-container">
-    <div class="books"></div>
+    <div class="books">
+      <div class="book-container" id="book1">
+        <div class="book-cover">
+          <p class="book-title">Lord of The Rings</p>
+          <p class="by">by</p>
+          <p class="author">J R R Tolkien</p>
+        </div>
+        <div class="book-info">
+          <p class="label">Type:</p>
+          <p class="type">Fantasy</p>
+          <p class="label">No of Pages:</p>
+          <p class="pages">1250</p>
+        </div>
+        <div class="buttons-book">
+          <button class="delete-card">Delete</button>
+          <button class="change-status">Mark As Read</button>
+        </div>
+      </div>
+    </div>
+
     <div class="stats">
       <h3>Stats</h3>
       <p><span id="noOfBooks"></span> books in library</p>
@@ -99,6 +118,7 @@
       <p><span id="noOfPages"></span> pages finished</p>
       <p><span id="favGenre"></span> is the most read genre in the library</p>
     </div>
+    
   </div>
 </body>
 </html>
