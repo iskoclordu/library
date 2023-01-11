@@ -1,3 +1,5 @@
+/* eslint-disable guard-for-in */
+/* eslint-disable no-restricted-syntax */
 const myLibrary = [];
 const books = document.querySelector('.books');
 
@@ -200,6 +202,5 @@ function updateStats() {
   }
 
   const sortedGenreCounts = genreCountsArray.sort((a, b) => a[1] - b[1]);
-  console.table(sortedGenreCounts);
   favGenre.innerHTML = `${sortedGenreCounts[(sortedGenreCounts.length) - 1][0]}`;
 }

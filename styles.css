@@ -134,7 +134,7 @@ body{
   gap: 0.8rem;
 }
 
-.user-container .log-in, form button{
+.user-container .log-in, .form-button button{
   border-radius: 0.2rem;
   background-color: var(--font-color-light);
   color: var(--font-shades-color);
@@ -249,6 +249,9 @@ form select{
 }
 
 .form-button{
+  align-self: flex-end;
+}
+.form-container .form-button{
   margin-top: 0.8rem;
   display: flex;
   justify-content: flex-end;
@@ -263,6 +266,7 @@ form, input, .search input{
 
 .content-container{
   padding: 0.7rem;
+  padding-right: 1rem;
   display: grid;
   grid-template:1fr 1fr / 8fr 1fr;
   gap: 1rem;  
